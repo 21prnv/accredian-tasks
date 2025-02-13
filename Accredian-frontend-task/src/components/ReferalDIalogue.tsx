@@ -64,11 +64,14 @@ const ReferralDialog: React.FC<ReferralDialogProps> = ({ triggerButton }) => {
 
     if (Object.keys(newErrors).length === 0) {
       try {
-        const response = await fetch("/api/referrals", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        });
+        const response = await fetch(
+          "https://accredian-task-backend-qg70.onrender.com/api/referrals",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+          }
+        );
 
         if (response.ok) {
           toast({
@@ -128,7 +131,7 @@ const ReferralDialog: React.FC<ReferralDialogProps> = ({ triggerButton }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{triggerButton}</DialogTrigger>
-      <DialogContent className="sm:max-w-[500px] bg-white">
+      <DialogContent className="sm:max-w-[500px] bg-white max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-gray-900 text-xl font-semibold">
             Refer a Friend
