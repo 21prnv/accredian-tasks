@@ -1,0 +1,6 @@
+  DATABASE_URL="mysql://<USER>:<PASS>@localhost:3306/<DATABASE_NAME"
+GMAIL_CLIENT_ID = "904993780863-uu36ebdsdnbaukoujbarj5gocrh76vs3.apps.googleusercontent.com"
+GMAIL_CLIENT_SECRET="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"
+GMAIL_REFRESH_TOKEN="1//04LAxJXLUMMFXCgYIARAAGAQSNwF-L9Ir_yQRSwuMaojWtgdpfruNknAQveGf0rPGcOT8JFlZbpqrmbKu2z7ydtdLo-EavaBMEBs"
+GMAIL_REDIRECT_URI="https://developers.google.com/oauthplayground"
+EMAIL_FROM = "pranavpatil6251@gmail.com"
